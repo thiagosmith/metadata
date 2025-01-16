@@ -18,5 +18,5 @@ echo "Examinando os metadados"
 exiftool *$2 2>/dev/null # analisa os metadados
 echo ""
 echo "Apagando os arquivos baixados"
-rm -rf *$2 #apaga os arquivos baixados
-rm meta.txt # apaga a lista
+rm -rf *$2 2>/dev/null # apaga os arquivos baixados
+rm meta.txt 2>/dev/null # apaga a lista
